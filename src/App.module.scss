@@ -1,0 +1,121 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.loader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  & span {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 10px solid lightblue;
+    border-radius: 50%;
+    border-top-color: red;
+    border-right-color: yellow;
+    border-left-color: green;
+    animation: 1s linear 0s infinite spiner;
+  }
+}
+
+@keyframes spiner {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+
+  & input,
+  select {
+    padding: 5px;
+  }
+}
+
+.formControlContent {
+  display: flex;
+  gap: 10px;
+
+  & input {
+    flex: 1 1 auto;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.tempalteContainer {
+  overflow: auto;
+}
+.template {
+  padding: 20px 10px;
+  width: 814px;
+  height: 500px;
+  margin: 0 auto;
+}
+.templateTitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.templateHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.userAvatar {
+  & img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+
+  & p {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+.subHeader {
+  text-align: right;
+}
+
+.content {
+  & h4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.button {
+  padding: 0 10px;
+  text-transform: uppercase;
+}
