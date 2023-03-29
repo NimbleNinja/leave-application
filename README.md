@@ -4,7 +4,7 @@ Current project version on [GitHub Pages](https://nimbleninja.github.io/leave-ap
 
 ## Description
 
-Web application that is able to search through GitHub users and their corresponding projects using the GitHub api: https://docs.github.com/en/rest using React.
+Filling out the leave application form with the option to download in PDF.
 
 #### Tech stack:
 
